@@ -5,17 +5,6 @@
 * Swift Timer 사용 방법 공부 및 앞선 실습에서 배운 AVFoundation,  AVAudioPlayer 사용 연습.
 * Progress Veiw 사용 방법 공부 (진행상태는 0.0 ~ 1.0 의 숫자로 표시되며, progressBar.progress = Float(secondsPassed) / Float(totalTime) 등으로 사용. timer.invalidate()은 timer의 사용을 중단시킬 때 사용: Stops the timer from ever firing again and requests its removal from its run loop).  
 * timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(updateTimer), userInfo: nil, repeats: true)
-    @objc func updateTimer() {
-        if secondsPassed < totalTime {
-            secondsPassed += 1
-            progressBar.progress = Float(secondsPassed) / Float(totalTime)
-            print(progressBar.progress)
-        } else {
-            timer.invalidate()
-            playSound(soundName: "alarm_sound")
-            titleLabel.text = "Done!"
-        }
-    }
 
 ## 수업 원자료는 아래와 같음
 ![App Brewery Banner](Documentation/AppBreweryBanner.png)
