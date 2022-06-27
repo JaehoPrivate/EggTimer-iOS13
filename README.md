@@ -1,7 +1,7 @@
 # Egg Timer 수업으로 배운 점 및 원자료
 
 ## 실습으로 배운 점
-* 계란 요리법에 따른 시간을 Dictionaty자료형으로 표현 및 if-else 와 switch 구문 공부.
+* 계란 요리법에 따른 시간을 Dictionaty자료형으로 표현 및 if-else 와 switch 구문 공부(Angela: 조건 개수가 5개 미만일 경우 if-else, 그 외의 경우 switch가 효율적).
 * Swift Timer 및 앞선 실습에서 배운 AVFoundation,  AVAudioPlayer 사용 연습.
 * Progress Veiw 사용 (진행상태는 0.0 ~ 1.0 의 숫자로 표시되며, progressBar.progress = Float(secondsPassed) / Float(totalTime) 등으로 사용. timer.invalidate()은 timer의 사용을 중단시킬 때 사용: Stops the timer from ever firing again and requests its removal from its run loop).  
 * timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(updateTimer), userInfo: nil, repeats: true)
